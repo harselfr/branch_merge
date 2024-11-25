@@ -3,6 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Beranda</title>
+</head>
+<body style="background-color:bisque">
+        <h2 style="background-color:grey">Selamat Datang</h2>
+        <h3>silahkan login terlebih dahulu</h3>
+        <form action="./backend/login.php" method="POST">
+            <input type="email" name="email" id="email" placeholder="masukan email" />
+            <input type="password" name="password" id="password" placeholder="masukan password" />
+            <button type="submit">Login</button>
+        </form>
+
+</body>
+</html>
+
     <title>Login</title>
     <!-- Link ke Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -79,3 +94,17 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>login</h1>
+    <form action="./backend/login.php" method="post">
+        <input type="email" name="email" placeholder="masukkan email anda">
+        <input type="password" name="password" placeholder="masukkan password anda">
+        <input type="submit" value="login" name="submit">
+    </form>
+
+</body>
+</html>
+
