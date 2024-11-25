@@ -1,5 +1,9 @@
 <?php
+
 session_start();
+
+
+main
 require './../config/db.php';
 
 if(isset($_POST['submit'])) {
@@ -12,6 +16,7 @@ if(isset($_POST['submit'])) {
         $data = mysqli_fetch_assoc($user);
         
         if(password_verify($password,$data['password'])) {
+pertemuan-7
 
             //otorisasi
             $_SESSION['name'] = $data['name'];
@@ -25,6 +30,11 @@ if(isset($_POST['submit'])) {
             }
 
 
+
+            echo "selamat datang ".$data['name'];
+            die;
+
+            //otorisasimain
         } else {
             echo "password salah";
             die;
@@ -35,4 +45,8 @@ if(isset($_POST['submit'])) {
         die;
     }
 }
+
 ?>
+
+?>
+main
