@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Login</title>
     <!-- Link ke Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -40,6 +39,18 @@
             border-radius: 20px;
             padding: 10px;
         }
+        .register-link {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 14px;
+        }
+        .register-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -57,6 +68,9 @@
                 <input type="submit" value="Login" name="submit" class="btn btn-primary">
             </div>
         </form>
+        <div class="register-link">
+            <p>Belum punya akun? <a href="./register.php">Daftar di sini</a></p>
+        </div>
     </div>
 
     <!-- Link ke Bootstrap JS dan dependencies (optional) -->
@@ -65,17 +79,3 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-    <title>Document</title>
-</head>
-<body>
-    <h1>login</h1>
-    <form action="./backend/login.php" method="post">
-        <input type="email" name="email" placeholder="masukkan email anda">
-        <input type="password" name="password" placeholder="masukkan password anda">
-        <input type="submit" value="login" name="submit">
-    </form>
-
-</body>
-</html>
- main
